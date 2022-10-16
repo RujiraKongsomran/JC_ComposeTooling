@@ -1,6 +1,5 @@
 package com.rujirakongsomran.jc_composetooling
 
-import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -19,7 +18,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.tooling.preview.Preview
 import com.rujirakongsomran.jc_composetooling.ui.theme.JC_ComposeToolingTheme
 
 class MainActivity : ComponentActivity() {
@@ -63,10 +61,8 @@ fun SurveyAnswer() {
     }
 
 }
-@Preview(fontScale = 1.8f)
-@Preview(showBackground = true, backgroundColor = 0xFF2A3323,
-    uiMode = Configuration.UI_MODE_NIGHT_NO or Configuration.UI_MODE_TYPE_NORMAL
-)
+@FontScalePreviews
+@DarkLightPreviews
 @Composable
 fun SurveyAnswerPreview() {
     JC_ComposeToolingTheme {
