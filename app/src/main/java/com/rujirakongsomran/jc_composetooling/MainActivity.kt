@@ -63,6 +63,7 @@ fun SurveyAnswer() {
     }
 
 }
+@Preview(fontScale = 1.8f)
 @Preview(showBackground = true, backgroundColor = 0xFF2A3323,
     uiMode = Configuration.UI_MODE_NIGHT_NO or Configuration.UI_MODE_TYPE_NORMAL
 )
