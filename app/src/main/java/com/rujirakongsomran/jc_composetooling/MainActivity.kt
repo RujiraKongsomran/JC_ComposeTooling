@@ -1,5 +1,6 @@
 package com.rujirakongsomran.jc_composetooling
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -62,7 +63,9 @@ fun SurveyAnswer() {
     }
 
 }
-@Preview
+@Preview(showBackground = true, backgroundColor = 0xFF2A3323,
+    uiMode = Configuration.UI_MODE_NIGHT_NO or Configuration.UI_MODE_TYPE_NORMAL
+)
 @Composable
 fun SurveyAnswerPreview() {
     JC_ComposeToolingTheme {
